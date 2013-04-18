@@ -1,0 +1,202 @@
+// Global Foundation Settings
+@import "settings";
+
+// Comment out this import if you are customizing you imports below
+@import "foundation";
+
+// Import specific parts of Foundation by commenting the import "foundation"
+// and uncommenting what you want below. You must uncomment the following if customizing
+
+// @import "foundation/foundation-global"; // *always required
+// @import "foundation/components/global"; // *always required
+// @import "foundation/components/grid";
+// @import "foundation/components/visibility";
+// @import "foundation/components/block-grid";
+// @import "foundation/components/type";
+// @import "foundation/components/buttons";
+// @import "foundation/components/forms"; // *requires components/buttons
+// @import "foundation/components/custom-forms"; // *requires components/buttons, components/forms
+// @import "foundation/components/button-groups"; // *requires components/buttons
+// @import "foundation/components/dropdown-buttons"; // *requires components/buttons
+// @import "foundation/components/split-buttons"; // *requires components/buttons
+// @import "foundation/components/flex-video";
+// @import "foundation/components/section";
+// @import "foundation/components/top-bar";  // *requires components/grid
+// @import "foundation/components/orbit";
+// @import "foundation/components/reveal";
+// @import "foundation/components/joyride";
+// @import "foundation/components/clearing";
+// @import "foundation/components/alert-boxes";
+// @import "foundation/components/breadcrumbs";
+// @import "foundation/components/keystrokes";
+// @import "foundation/components/labels";
+// @import "foundation/components/inline-lists";
+// @import "foundation/components/pagination";
+// @import "foundation/components/panels";
+// @import "foundation/components/pricing-tables";
+// @import "foundation/components/progress-bars";
+// @import "foundation/components/side-nav";
+// @import "foundation/components/sub-nav";
+// @import "foundation/components/switch";
+// @import "foundation/components/magellan";
+// @import "foundation/components/tables";
+// @import "foundation/components/thumbs";
+// @import "foundation/components/tooltips";
+// @import "foundation/components/dropdown";
+
+body {
+  background-image: $body-background-image;
+  font-family: "Georgia", serif;
+}
+
+h3, h4 {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+h3 {
+  margin-bottom: 1em;
+  font-size: 2em;
+}
+
+.top-bar {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 0;
+
+  .right {
+    text-transform: uppercase;
+  }
+
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+}
+
+.section {
+  padding-bottom: 25px;
+  padding-top: 25px;
+  color: white;
+
+  h3 {
+    border-bottom: 7px solid #FFFFFF;
+  }
+}
+
+#main-heading {
+    background: #7E2A4C;
+    background: rgba(126, 42, 76, 0.95);
+    /* IE10 Consumer Preview */ 
+    background-image: -ms-radial-gradient(center, circle farthest-corner, #7E2A4C 0%, #5C1F37 100%);
+    /* Mozilla Firefox */ 
+    background-image: -moz-radial-gradient(center, circle farthest-corner, #7E2A4C 0%, #5C1F37 100%);
+    /* Opera */ 
+    background-image: -o-radial-gradient(center, circle farthest-corner, #7E2A4C 0%, #5C1F37 100%);
+    /* Webkit (Safari/Chrome 10) */ 
+    background-image: -webkit-gradient(radial, center center, 0, center center, 497, color-stop(0, #7E2A4C), color-stop(1, #5C1F37));
+    /* Webkit (Chrome 11+) */ 
+    background-image: -webkit-radial-gradient(center, circle farthest-corner, #7E2A4C 0%, #5C1F37 100%);
+    /* W3C Markup, IE10 Release Preview */ 
+    background-image: radial-gradient(circle farthest-corner at center, #7E2A4C 0%, #5C1F37 100%);
+    height: 650px;
+
+    h1 {
+      font-size: 3.5em;
+      margin-top: 0.6em;
+      margin-bottom: 15px;
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+      @include text-shadow;
+    }
+
+    h2 {
+      color: white;
+      font-size: 1.8em;
+      font-weight: 400;
+      margin-bottom: 1em;
+      font-family: 'Scada', sans-serif;
+    }
+
+    a {
+    margin-right: 15px;
+    margin-bottom: 25px;
+    @include box-shadow;
+    }
+}
+
+#intro {
+  background: #0D2026;
+  font-size: 16px;
+  @include box-shadow;
+  
+  p { color: white; }
+  
+}
+
+#conseling {
+  h3 { color: black; }
+}
+
+#ict {
+  background: #254E6F;
+  background: rgba(37, 78, 111, 1);
+
+  #features li {
+    margin-left: 25px;
+  }
+
+}
+
+#researchers {
+  background: #14303D;
+  background: rgba(20, 48, 61, 1);
+
+  .large-block-grid-4 {
+    li {
+       text-align: center;
+    }
+  }
+
+  ul li h4 {
+    font-size: 1em;
+    margin-bottom: 0;
+  }
+  ul li p {
+    font-size: 0.8em;
+    margin-bottom: 0;
+  }
+
+  img {
+  margin-top: 10px;
+  margin-top: 5px;
+  height: 80px;
+  -webkit-border-radius: 50em;
+  -moz-border-radius: 50em;
+  border-radius: 50em;
+  }
+
+  abbr {
+    font-variant: small-caps;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: lowercase;
+    color: white;
+    border-bottom: 0px;
+    color: white;
+  }
+}
+
+#publications{
+  background: #0D2026;
+  background: rgba(13, 32, 38, 1);
+  height: 400px;
+
+  p {
+    color: white;
+    font-size: 90%;
+  }
+  h3 {
+  }
+}
+
+
