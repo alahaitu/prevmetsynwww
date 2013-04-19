@@ -5609,6 +5609,8 @@ h3 {
 
 /* line 86, ../sass/app.scss */
 #main-heading {
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
   background: #7E2A4C;
   background: rgba(126, 42, 76, 0.95);
   /* IE10 Consumer Preview */
@@ -5623,12 +5625,10 @@ h3 {
   background-image: -webkit-radial-gradient(center, circle farthest-corner, #7e2a4c 0%, #5c1f37 100%);
   /* W3C Markup, IE10 Release Preview */
   background-image: radial-gradient(circle farthest-corner at center, #7e2a4c 0%, #5c1f37 100%);
-  height: 650px;
 }
-/* line 103, ../sass/app.scss */
+/* line 104, ../sass/app.scss */
 #main-heading h1 {
   font-size: 3.5em;
-  margin-top: 0.6em;
   margin-bottom: 15px;
   color: white;
   font-family: 'Montserrat', sans-serif;
@@ -5649,63 +5649,72 @@ h3 {
   box-shadow: 1px 1px 10px 5px rgba(26, 26, 26, 0.17);
   -webkit-box-shadow: 1px 1px 10px 5px rgba(26, 26, 26, 0.17);
 }
-
-/* line 127, ../sass/app.scss */
-#intro {
+/* line 126, ../sass/app.scss */
+#main-heading #intro {
   background: #0D2026;
   font-size: 16px;
   box-shadow: 1px 1px 10px 5px rgba(26, 26, 26, 0.17);
   -webkit-box-shadow: 1px 1px 10px 5px rgba(26, 26, 26, 0.17);
 }
-/* line 132, ../sass/app.scss */
-#intro p {
+/* line 130, ../sass/app.scss */
+#main-heading #intro p {
   color: white;
 }
 
-/* line 137, ../sass/app.scss */
-#conseling h3 {
-  color: black;
+/* line 135, ../sass/app.scss */
+#showcase h3 {
+  color: #222;
+  border-bottom: 7px solid #222;
 }
 
-/* line 140, ../sass/app.scss */
+/* line 141, ../sass/app.scss */
+#counseling {
+  background-image: url("../images/grey_wash_wall.png");
+}
+
+/* line 145, ../sass/app.scss */
 #ict {
   background: #254E6F;
   background: #254e6f;
 }
-/* line 144, ../sass/app.scss */
+/* line 149, ../sass/app.scss */
 #ict #features li {
   margin-left: 25px;
 }
 
-/* line 150, ../sass/app.scss */
+/* line 155, ../sass/app.scss */
 #researchers {
   background: #14303D;
   background: #14303d;
 }
-/* line 155, ../sass/app.scss */
+/* line 160, ../sass/app.scss */
 #researchers .large-block-grid-4 li {
   text-align: center;
 }
-/* line 160, ../sass/app.scss */
+/* line 165, ../sass/app.scss */
+#researchers h4 {
+  margin-top: 0.8em;
+  margin-bottom: 1em;
+}
+/* line 170, ../sass/app.scss */
 #researchers ul li h4 {
   font-size: 1em;
   margin-bottom: 0;
 }
-/* line 164, ../sass/app.scss */
+/* line 174, ../sass/app.scss */
 #researchers ul li p {
   font-size: 0.8em;
   margin-bottom: 0;
 }
-/* line 169, ../sass/app.scss */
+/* line 179, ../sass/app.scss */
 #researchers img {
   margin-top: 10px;
-  margin-top: 5px;
   height: 80px;
   -webkit-border-radius: 50em;
   -moz-border-radius: 50em;
   border-radius: 50em;
 }
-/* line 178, ../sass/app.scss */
+/* line 187, ../sass/app.scss */
 #researchers abbr {
   font-variant: small-caps;
   font-weight: 600;
@@ -5716,13 +5725,13 @@ h3 {
   color: white;
 }
 
-/* line 189, ../sass/app.scss */
+/* line 198, ../sass/app.scss */
 #publications {
   background: #0D2026;
   background: #0d2026;
   height: 400px;
 }
-/* line 194, ../sass/app.scss */
+/* line 203, ../sass/app.scss */
 #publications p {
   color: white;
   font-size: 90%;

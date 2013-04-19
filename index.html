@@ -14,6 +14,9 @@
   
 
   <script src="javascripts/vendor/custom.modernizr.js"></script>
+  <script src="javascripts/vendor/jquery.js"></script>
+  <script src="javascripts/vendor/jquery.scrollTo.js"></script>
+  <script src="javascripts/vendor/jquery.nav.js"></script>
 
 </head>
 <body>
@@ -37,17 +40,17 @@
     </ul>
 
     <!-- Right Nav Section -->
-    <ul class="right">
-      <li class="divider hide-for-small"></li>
-      <li><a href="#">Esittely</a>
+    <ul class="right" id="nav">
+      <li class="divider hide-for-small current"></li>
+      <li><a href="#showcase">Esittely</a>
       <li class="divider"></li>
-      <li><a href="#">Ohjausmalli</a>
+      <li><a href="#counseling">Ohjausmalli</a>
       <li class="divider"></li>
-      <li><a href="#">ICT-sovellus</a>
+      <li><a href="#ict">ICT-sovellus</a>
       <li class="divider"></li>
-      <li><a href="#">Toteuttajat</a>
+      <li><a href="#researchers">Toteuttajat</a>
       <li class="divider"></li>
-      <li><a href="#">Julkaisut</a>    
+      <li><a href="#publications">Julkaisut</a>    
       <li class="divider"></li>
       <li><a href="#">In English</a>
       </li>
@@ -58,24 +61,47 @@
 
   <div class="section" id="main-heading">
     <div class="row">
-		  <div class="large-12 columns">
+      <div class="large 4-columns">
+        <img src="images/polliisi.png" style="width: 270px; float: left;">
+      </div>
+		  <div class="large-8 columns">
 			 <h1>Metabolisen oireyhtymän ehkäisy elämäntapaohjauksen avulla</h1>
 			 <h2>Uusien ohjausmenetelmien soveltaminen perusterveydenhuoltoon </h2>
       </div>
     </div>
     <div class="row">
-       <div class="large-9 columns">
-        <a class="th radius" href="../img/demos/demo2.png">
-        <img src="http://lorempixel.com/200/100/">
-        </a>
-        <a class="th radius" href="../img/demos/demo2.png">
-        <img src="http://lorempixel.com/200/100/">
-        </a>
-        <br />
+      <div class="large-4 columns">
+      </div>
+      <div class="large-8 columns">
         <div class="panel" id="intro">
           <p>Tutkimus perustuu Suomen Akatemian SALVE-ohjelman kansainvälisessä arvioinnissa erinomaiset arviot saaneeseen elintapaohjauksen uuteen menetelmään, joka yhdistää syömiskäyttäytymisen muutosten ja terveystiedon ymmärtämisen huomioon ottamisen sekä modernin ICT-teknologian hyödyntämisen.</p>
         </div>
 		  </div>
+    </div>
+  </div>
+  <div class="section" id="showcase">
+    <div class="row">
+      <div class="large-12 columns">
+      <h3>Esittely</h3>
+      </div>
+    </div>
+    <!-- Grid Example -->
+        <div class="row">
+          <div class="large-12 columns">
+            <div class="panel">
+              <h4>Popcorn</h4>
+              <p>Icing ice cream chocolate applicake applicake jelly-o ice cream powder. Dessert gummies marshmallow candy canes faworki macaroon candy canes. Cheesecake cheesecake carrot cake topping. Gingerbread gummies danish wafer liquorice cotton candy brownie powder bonbon. Jujubes candy jelly apple pie chocolate bar. Gummi bears fruitcake wafer ice cream gummies. Cake soufflé halvah bear claw toffee cupcake topping halvah lollipop. Pie fruitcake dessert.</p>
+
+              <p>Dessert marshmallow lemon drops ice cream marzipan powder jelly beans gingerbread carrot cake. Wypas fruitcake candy dragée sweet roll jujubes chocolate. Chocolate cake jujubes donut sweet roll croissant muffin marzipan ice cream lollipop. Liquorice ice cream chocolate cake tart jujubes toffee chocolate bar. Candy cookie cheesecake toffee gummies marzipan chocolate caramels. Croissant macaroon chocolate cake muffin sesame snaps candy. Jelly-o biscuit fruitcake biscuit topping dragée gingerbread sesame snaps cotton candy. Tart sweet brownie marshmallow biscuit. Dragée candy applicake.</p>
+              <h4>Ice cream</h4>
+              <p>Faworki pie pastry donut jujubes chocolate topping bear claw. Gingerbread tiramisu applicake apple pie wafer muffin. Bonbon pastry macaroon chocolate cotton candy sugar plum carrot cake. Jujubes cotton candy chupa chups. Powder oat cake sugar plum. Biscuit biscuit jelly jujubes chupa chups marshmallow cake chocolate bar candy canes. Applicake pie macaroon chocolate bar brownie gummies. Dragée marzipan pie soufflé wafer powder lollipop caramels wafer. Biscuit wypas pastry tiramisu jelly. Ice cream sugar plum jelly beans cake tootsie roll.</p>
+
+              <p>Lollipop tiramisu gummies. Halvah biscuit jelly beans oat cake cheesecake sweet bonbon. Cotton candy pudding candy halvah. Cookie macaroon carrot cake marzipan topping chocolate. Jelly cupcake dragée. Cookie toffee oat cake. Cake icing pie marzipan biscuit marzipan. Macaroon fruitcake sugar plum tiramisu candy canes soufflé oat cake. Liquorice faworki dragée sweet chupa chups cotton candy liquorice pudding pie. Cookie cookie tiramisu cupcake cupcake.</p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div class="section" id="counseling">
@@ -135,8 +161,10 @@
         <p>Web-pohjainen ICT-sovellus Onnikka tarjoaa käyttäjilleen:</p>
         <ul id="features">
           <li>Viikottaisen tietopaketin, tehtävän ja vinkin</li>
+          <li>Vertaistuen muilta käyttäjiltä
           <li>Painon ja motivaation seurannan</li>
           <li>Ruoka- ja liikuntapäiväkirjan</li>
+          <li>Työkaluja elämäntapamuutoksen avuksi</li>
           <li>Mahdollisuuden kysymysten esittämiseen asiantuntijoille</li>
           <li>Sähköpostimuistutukset</li>
         </ul>
@@ -149,48 +177,80 @@
       <div class="large-12 columns">
       <h3>Toteuttajat</h3>
       </div>
+    </div>
     <div class="row">
+
       <div class="large-12 columns">
+                <ul class="large-block-grid-4">
+        <li><img src="images/people-na.jpg" />
+          <h4>Jaana Laitinen</h4>
+          <p><abbr>FT</abbr></p>
+          <p>Dosentti, Työterveyslaitos</p>
+        </li>
+        </ul>
+        <h4>Kliinisen lääketieteen laitos, sisätaudit</h4>
         <ul class="large-block-grid-4">
-          <li><img src="http://lorempixel.com/80/80/" />
-            <h4>Prof. Markku Savolainen</h4>
+          <li><img src="images/people-na.jpg" />
+            <h4>Markku Savolainen</h4>
             <p><abbr>LKT</abbr></p>
-            <p>Danish topping muffin. Icing chupa chups lemon drops.</p>
+            <p>Sisätautiopin professori</p>
           </li>
-          <li><img src="images/people-hok.jpg" class="circle image-wrap">
-            <h4>Prof. Harri Oinas-Kukkonen</h4>
-            <p><abbr>FT</abbr></p>
-            <p>Cake gingerbread donut soufflé ice cream tart dragée tiramisu</p>
-          </li>
-          <li><img src="http://lorempixel.com/80/80/">
+
+          <li><img src="images/people-na.jpg" />
             <h4>Anna-Maria Keränen</h4>
             <p><abbr>FT</abbr></p>
-            <p>Biscuit dragée tiramisu chocolate bar pie gingerbread caramels.</p>
+            <p>Laillistettu ravitsemusterapeutti, tutkija</p>
           </li>
-          <li><img src="http://lorempixel.com/80/80/">
+          <li><img src="images/people-na.jpg" />
             <h4>Tuire Salonurmi</h4>
             <p><abbr>FT</abbr></p>
-            <p>Apple pie gummies apple pie chocolate marshmallow.</p>
+            <p>Projektipäällikkö</p>
           </li>
-        </ul>
-        <ul class="large-block-grid-4">
-          <li><img src="http://lorempixel.com/80/80/" />
+          <li><img src="images/people-na.jpg" />
             <h4>Terhi Jokelainen</h4>
             <p><abbr>KTM, ETM</abbr></p>
-            <p>Chocolate cake bonbon sweet roll bonbon caramels sweet chocolate.</p>
+            <p>Laillistettu ravitsemusterapeutti, tutkija</p>
+          </li>
+        </ul>
+        <h4>Tietojenkäsittelytieteiden laitos</h4>
+        <ul class="large-block-grid-4">
+          <li><img src="images/people-hok.jpg" />
+            <h4>Harri Oinas-Kukkonen</h4>
+            <p><abbr>FT</abbr></p>
+            <p>Tietojärjestelmien professori</p>
           </li>
           <li><img src="images/people-pk.jpg">
             <h4>Pasi Karppinen</h4>
             <p><abbr>FM</abbr></p>
-            <p>Tart fruitcake candy powder biscuit bear claw chupa chups fruitcake.</p></li>
+            <p>Tutkija</p>
           <li><img src="images/people-ta.jpg" />
             <h4>Tuomas Alahäivälä</h4>
             <p><abbr>FM</abbr></p>
-            <p>Fruitcake dragée gummies sesame snaps donut muffin tiramisu chocolate. </p></li>
+            <p>Tutkija</p>
+        </ul>
+        <h4>Informaatiotutkimus</h4>
+        <ul class="large-block-grid-4">
+          <li><img src="images/people-na.jpg" />
+            <h4>Maija-Leena Huotari</h4>
+            <p><abbr>FT</abbr></p>
+            <p>Informaatiotutkimuksen professori
+          </li>
           <li><img src="images/people-ka.jpg">
             <h4>Kreeta Askola</h4>
             <p><abbr>FM</abbr></p>
-            <p>Chupa chups toffee candy pudding topping croissant cotton candy cake.</p></li>
+            <p>Tutkija</p>
+            <li><img src="images/people-na.jpg" />
+            <h4>Heidi Enwald</h4>
+            <p><abbr>FM</abbr></p>
+            <p>Tutkija</p>
+            <li><img src="images/people-na.jpg" />
+            <h4>Stefan Ek</h4>
+            <p><abbr>FT</abbr></p>
+            <p>Tutkija</p>
+            <li><img src="images/people-na.jpg" />
+            <h4>Raimo Niemelä</h4>
+            <p><abbr>FT</abbr></p>
+            <p>Tutkija</p>
         </ul>
       </div>
     </div>
@@ -205,11 +265,11 @@
     <div class="row">
       <div class="large-12 columns">
         <h4>2013</h4>
-        <p><strong>Alahäivälä T., Oinas-Kukkonen, H. & Jokelainen, T.</strong>: Software Architecture Design for Health BCSS: Case Onnikka. PERSUASIVE 2013, Lecture Notes In Computer Science, vol. 7822. Springer, Berlin. <a href="http://link.springer.com/content/pdf/10.1007%2F978-3-642-37157-8_3.pdf" target="_blank">http://link.springer.com/content/pdf/10.1007%2F978-3-642-37157-8_3.pdf</a>
+        <p><strong>Alahäivälä T., Oinas-Kukkonen, H. & Jokelainen, T.</strong>: Software Architecture Design for Health BCSS: Case Onnikka. PERSUASIVE 2013, Lecture Notes In Computer Science, vol. 7822. Springer, Berlin <a href="http://link.springer.com/content/pdf/10.1007%2F978-3-642-37157-8_3.pdf" target="_blank">http://link.springer.com/content/pdf/10.1007%2F978-3-642-37157-8_3.pdf</a>
         </p>
         <h4>2011</h4>
         <p>
-          <strong>Keränen, A-M.</strong> Lifestyle interventions in treatment of obese adults. Eating behaviour and other factors affecting weight loss and maintenance. University of Oulu, Oulu, Finland.
+          <strong>Keränen, A-M.</strong> Lifestyle interventions in treatment of obese adults. Eating behaviour and other factors affecting weight loss and maintenance. University of Oulu, Oulu, Finland
         </p>
       </div>
     </div>
@@ -252,6 +312,9 @@
   
   <script>
     $(document).foundation();
+    $(document).ready(function() {
+    $('#nav').onePageNav();
+    });
   </script>
 </body>
 </html>

@@ -84,6 +84,8 @@ h3 {
 }
 
 #main-heading {
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
     background: #7E2A4C;
     background: rgba(126, 42, 76, 0.95);
     /* IE10 Consumer Preview */ 
@@ -98,11 +100,9 @@ h3 {
     background-image: -webkit-radial-gradient(center, circle farthest-corner, #7E2A4C 0%, #5C1F37 100%);
     /* W3C Markup, IE10 Release Preview */ 
     background-image: radial-gradient(circle farthest-corner at center, #7E2A4C 0%, #5C1F37 100%);
-    height: 650px;
 
     h1 {
       font-size: 3.5em;
-      margin-top: 0.6em;
       margin-bottom: 15px;
       color: white;
       font-family: 'Montserrat', sans-serif;
@@ -122,19 +122,24 @@ h3 {
     margin-bottom: 25px;
     @include box-shadow;
     }
+
+    #intro {
+      background: #0D2026;
+      font-size: 16px;
+      @include box-shadow;
+      p { color: white; }
+    }
 }
 
-#intro {
-  background: #0D2026;
-  font-size: 16px;
-  @include box-shadow;
-  
-  p { color: white; }
-  
+#showcase {
+  h3 {
+    color: #222;
+    border-bottom: 7px solid #222;
+  }
 }
 
-#conseling {
-  h3 { color: black; }
+#counseling {
+  background-image: url('../images/grey_wash_wall.png');
 }
 
 #ict {
@@ -157,6 +162,11 @@ h3 {
     }
   }
 
+  h4 {
+    margin-top: 0.8em;
+    margin-bottom: 1em;
+  }
+
   ul li h4 {
     font-size: 1em;
     margin-bottom: 0;
@@ -168,7 +178,6 @@ h3 {
 
   img {
   margin-top: 10px;
-  margin-top: 5px;
   height: 80px;
   -webkit-border-radius: 50em;
   -moz-border-radius: 50em;
