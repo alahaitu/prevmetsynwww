@@ -44,13 +44,54 @@
 // @import "foundation/components/tooltips";
 // @import "foundation/components/dropdown";
 
+// Modular Scale
+//----------------------
+//  16px @ 1:1.618  
+//  32px @ 1:1.618  
+//----------------------
+
+// Custom imports, variables and mixins
+
+  @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700|Scada);
+
+  $heading-font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+  $secondary-heading-font-family: 'Scada', 'Helvetica', 'Arial', sans-serif;
+  $body-background-image: url('../images/binding_light.png');
+
+  @mixin box-shadow {
+    box-shadow: 1px 1px 10px 5px rgba(26,26,26,0.17);
+    -webkit-box-shadow: 1px 1px 10px 5px rgba(26,26,26,0.17);
+  }
+  @mixin text-shadow {
+    text-shadow: 2px 2px 5px #000000;
+  }
+  @mixin text-indents {
+    p {
+      margin-bottom: 0;
+    }
+
+    p + p {
+      text-indent: 2em;
+      margin-top: 0;
+    }
+    h4:first-child {
+      margin-top: 0;
+    }
+    h4 {
+      margin-top: 0.764em;
+    }
+  }
+
+
+//Custom styles
+
 body {
   background-image: $body-background-image;
   font-family: "Georgia", serif;
 }
 
 h3, h4 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: $heading-font-family;
   color: white;
 }
 
@@ -59,33 +100,61 @@ h3 {
   font-size: 2em;
 }
 
+abbr { 
+        border-bottom: 0;
+        cursor: text;
+      }
+
+
+.top-bar-section ul li > a {
+  height: 45px;
+}
+
+
 .top-bar {
-  font-family: 'Montserrat', sans-serif;
+  font-family: $heading-font-family;
   margin-bottom: 0;
 
   .right {
     text-transform: uppercase;
+
+    img { 
+      margin-right: 5px; 
+      height: 9px;
+    }
+
+    i {
+      vertical-align: top;
+    }
+
   }
 
   h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: $heading-font-family;
   }
 
 }
 
 .section {
-  padding-bottom: 25px;
-  padding-top: 25px;
+  padding-bottom: 2em;
+  padding-top: 2em;
   color: white;
+  @media only screen and (min-width: 1024px) { min-height: 768px; }
+  @media only screen and (min-width: 1280px) { min-height: 800px; }
 
   h3 {
+    margin-top: 30px;
     border-bottom: 7px solid #FFFFFF;
+  }
+
+  i {
+    vertical-align: top;
   }
 }
 
-#main-heading {
-    padding-top: 2.5em;
-    padding-bottom: 2.5em;
+#main {
+    //padding-top: 2.5em;
+    //padding-bottom: 2.5em;
     background: #7E2A4C;
     background: rgba(126, 42, 76, 0.95);
     /* IE10 Consumer Preview */ 
@@ -102,36 +171,51 @@ h3 {
     background-image: radial-gradient(circle farthest-corner at center, #7E2A4C 0%, #5C1F37 100%);
 
     h1 {
-      font-size: 3.5em;
+      font-size: 3.236em;
+      line-height: 135%;
       margin-bottom: 15px;
       color: white;
-      font-family: 'Montserrat', sans-serif;
+      font-family: $heading-font-family;
       @include text-shadow;
     }
 
     h2 {
       color: white;
-      font-size: 1.8em;
+      font-size: 1.9em;
       font-weight: 400;
       margin-bottom: 1em;
-      font-family: 'Scada', sans-serif;
-    }
-
-    a {
-    margin-right: 15px;
-    margin-bottom: 25px;
-    @include box-shadow;
+      font-family: $secondary-heading-font-family;
     }
 
     #intro {
       background: #0D2026;
       font-size: 16px;
+      margin-bottom: 0;
+      border-bottom: 0;
       @include box-shadow;
-      p { color: white; }
+
+      p, abbr { color: white; }
+    }
+
+    #logos {
+      margin-top: 0;
+      @include box-shadow;
+      
+      img {
+        margin-right: 10px;
+        height: 30px;
+//        filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'saturate\' values=\'0\'/></filter></svg>#grayscale"); /* Firefox 10+ */
+//        filter: gray alpha(opacity=100); /* IE6-9 */
+//        -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+//        -webkit-transition: all .3s ease; /* Fade to color for Chrome and Safari */
+//       -webkit-backface-visibility: hidden; /* Fix for transition flickering */
+      }
     }
 }
 
 #showcase {
+  @include text-indents;
+
   h3 {
     color: #222;
     border-bottom: 7px solid #222;
@@ -139,7 +223,15 @@ h3 {
 }
 
 #counseling {
-  background-image: url('../images/grey_wash_wall.png');
+  background-color: #3c3c3c;
+  background: rgba(60, 60, 60, 0.6);
+  @include text-indents;
+
+  ul li {
+    color: #222;
+    margin-left: 15px;
+  }
+
 }
 
 #ict {
@@ -177,11 +269,11 @@ h3 {
   }
 
   img {
-  margin-top: 10px;
-  height: 80px;
-  -webkit-border-radius: 50em;
-  -moz-border-radius: 50em;
-  border-radius: 50em;
+    margin-top: 10px;
+    height: 70px;
+    -webkit-border-radius: 50em;
+    -moz-border-radius: 50em;
+    border-radius: 50em;
   }
 
   abbr {
@@ -195,17 +287,13 @@ h3 {
   }
 }
 
-#publications{
+#publications {
   background: #0D2026;
-  background: rgba(13, 32, 38, 1);
-  height: 400px;
+  background: rgba(13, 32, 38, 1) repeat;
 
   p {
     color: white;
     font-size: 90%;
   }
-  h3 {
-  }
+
 }
-
-

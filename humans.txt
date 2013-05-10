@@ -1,8 +1,8 @@
-/* Foundation was made by ZURB, an interaction design and design strategy firm in Campbell, CA */
-/* zurb.com */
+/* Public web page for the Prevention of the Metabolic Syndrome research project in the University of Oulu */
+/* Web design by Tuomas Alahäivälä <alahaitu@gmail.com> */
 /* humanstxt.org */
 
 /* SITE */
   Standards: HTML5, CSS3
-  Components: jQuery, Orbit, Reveal
-  Software: Coda, Textmate, Git
+  Components: Foundation, jQuery, Orbit, Fittext, Nav.js, ScrollTo, Zepto
+  Software: Sublime Text 2, Git, Compass
