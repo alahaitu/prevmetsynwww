@@ -16,6 +16,8 @@
   <script src="javascripts/vendor/jquery.scrollTo.js"></script>
   <script src="javascripts/vendor/jquery.nav.js"></script>
   <script src="javascripts/vendor/jquery.fittext.js"></script>
+  <script src="javascripts/vendor/jquery.equalcolumns.js"></script>
+  <script src="javascripts/vendor/jquery.subnav.js"></script>
 </head>
 <body>
 
@@ -102,9 +104,9 @@
               <p>Tavoitteenamme on löytää uusia elintapaohjausmenetelmiä, joilla voidaan vaikuttaa aikaisempaa tehokkaammin elintapa- ja syömiskäyttäytymismuutoksiin. Lisäksi tutkimuksessa kehitetään <abbr>ICT</abbr>-sovellus, jolla voidaan tukea näiden muutosten tekemistä. Sekä ryhmäohjausmallien että <abbr>ICT</abbr>-sovelluksen vaikutusta elintapojen ja syömiskäyttäytymisen muutoksiin tutkitaan monitieteellisesti. 
               </p>
               <h4>Toteutus, aikataulu ja rahoitus</h4>
-              <p>Hanke toteutetaan kolmen ryhmän interventiona. Ryhmät eroavat toisistaan ohjauksen sisällön osalta. Kaikissa ryhmissä puolet kohdehenkilöistä käyttää tukena modernia tieto- ja viestintäteknologiaa. Tutkimuksen otoskoko on 600 henkilöä. Tutkimushenkilöt rekrytoidaan ja tutkimus aloitetaan vaiheittain n. 60 henkilön ryhmissä. Henkilöt satunnaistetaan kuuteen tutkimusryhmään, joihin jokaiseen on tavoitteena 100 henkilöä/ryhmä. Tutkimuksen kokonaiskesto on 2 vuotta.
-              <strong>Aikataulu:</strong> Hankkeen käytännön toimet ovat alkaneet vuoden 2012 alussa ja  potilaiden rekrytointi alkusyksystä 2012. 
-              <strong>Rahoitus:</strong> Suomen Akatemian <abbr>SALVE</abbr>-hanke ja Sosiaali-ja Terveysministeriön Terveyden edistämisen määräraha.</p>
+              <p>Hanke toteutetaan kolmen ryhmän interventiona. Ryhmät eroavat toisistaan ohjauksen sisällön osalta. Kaikissa ryhmissä puolet kohdehenkilöistä käyttää tukena modernia tieto- ja viestintäteknologiaa. Tutkimuksen otoskoko on 600 henkilöä. Tutkimushenkilöt rekrytoidaan ja tutkimus aloitetaan vaiheittain n. 60 henkilön ryhmissä. Henkilöt satunnaistetaan kuuteen tutkimusryhmään, joihin jokaiseen on tavoitteena 100 henkilöä/ryhmä. Tutkimuksen kokonaiskesto on 2 vuotta.</p><p>
+              <strong>Aikataulu:</strong> Hankkeen käytännön toimet ovat alkaneet vuoden 2012 alussa ja  potilaiden rekrytointi alkusyksystä 2012.<br />
+              <strong>Rahoitus:</strong> Suomen Akatemian <abbr>SALVE</abbr>-hanke ja Sosiaali-ja Terveysministeriön Terveyden edistämisen määräraha.
               </p>
             </div>
           </div>
@@ -122,7 +124,7 @@
 		<!-- Grid Example -->
   			<div class="row">
   				<div class="large-6 columns">
-  					<div class="panel">
+  					<div class="panel" id="first-div">
               <h4>Ohjausmalli 1</h4>
   						<ul>
                 <li>Ohjaus tapahtuu ryhmäohjauksena.</li>
@@ -131,8 +133,25 @@
                 <li>Tavoitteena on myös syömiseen liittyvien ajatusten, tunteiden ja toiminnan vuorovaikutuksen tunnistaminen sekä syömiseen ja painonhallintaan liittyvien mahdollisten haitallisten ajatusten tunnistaminen ja käsittely.</li>
                 <li>Ohjausmenetelminä käytetään tehtäviä ja harjoituksia syömisen hallintaan liittyen, tietoisuustaitoharjoituksia, ohjauskeskusteluja, parikeskusteluja ja kotitehtäviä.</li>
               </ul>
-  					</div>
-            <div class="panel">
+            </div>
+          </div>
+          <div class="large-6 columns">
+            <div class="panel" id="second-div">
+              <h4>Ohjausmalli 2</h4>
+              <ul>
+                <li>Ohjaus tapahtuu ryhmäohjauksena.</li>
+                <li>Yhdessä ryhmässä on noin 10 henkilöä ja ryhmätapaamisia on 2.</li>
+                <li>Tavoitteena on tulla tietoiseksi metaboliseen oireyhtymään vaikuttavista tekijöistä, niiden hoidosta elämäntapamuutosten avulla ja saada tietoa elintapamuutoksessa onnistumiseen.</li>
+                <li>Tavoitteena on määrittää oma tärkein muutostavoite ja alkaa kokeilla toimintaa tavoitteen toteuttamiseksi.</li>
+                <li>Ohjausmenetelminä käytetään mm. oppimispeliä, parikeskustelua, ja tehtäviä  Painon hallitsija –kirjasta<sup>1</sup>, jossa on tietoa ja tehtäviä elintapamuutoksen tueksi.</li>
+              </ul>
+              <small> <sup>1</sup> Laitinen J, Alahuhta M, Keränen A-M, Korkiakangas E, Nevanperä N. Painonhallitsija. Työterveyslaitos, 2012.</small>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-6 columns">  
+            <div class="panel" id="third-div">
               <h4>Onnikka-ohjaus</h4>
               <ul>
                 <li>Onnikka-ohjaus toteutuu omalla tietokoneella esim. kotona (on internetpohjainen).</li>
@@ -142,29 +161,16 @@
                 <li>Tavoitteena on tukea yksilöllistä muutosta  elintapojen ja syömiskäyttäytymisen osalta.</li>
               </ul>
             </div>
-  				</div>
-  				<div class="large-6 columns">
-  					<div class="panel">
-              <h4>Ohjausmalli 2</h4>
-  						<ul>
-                <li>Ohjaus tapahtuu ryhmäohjauksena.</li>
-                <li>Yhdessä ryhmässä on noin 10 henkilöä ja ryhmätapaamisia on 2.</li>
-                <li>Tavoitteena on tulla tietoiseksi metaboliseen oireyhtymään vaikuttavista tekijöistä, niiden hoidosta elämäntapamuutosten avulla ja saada tietoa elintapamuutoksessa onnistumiseen.</li>
-                <li>Tavoitteena on määrittää oma tärkein muutostavoite ja alkaa kokeilla toimintaa tavoitteen toteuttamiseksi.</li>
-                <li>Ohjausmenetelminä käytetään mm. oppimispeliä, parikeskustelua, ja tehtäviä  Painon hallitsija –kirjasta (Laitinen J, Alahuhta M, Painon hallitsija, Työterveyslaitos, 2012), jossa on tietoa ja tehtäviä elintapamuutoksen tueksi.</li>
-              </ul>
-  					</div>
-            <div class="panel">
+          </div>
+          <div class="large-6 columns">
+            <div class="panel" id="fourth-div">
               <h4>Verrokkiryhmä</h4>
               <p>Osa tutkimushenkiköistä arpoutuu verrokkiryhmään, jossa annetaan materiaalia ja kannustusta itsenäiseen elintapamuutosten tekemiseen.</p>
-              </ul>
             </div>
-  				</div>
+          </div>
         </div>
-		  </div>
-    </div>
-	</div>
-  <div class="section" id="ict">
+      </div>
+	  <div class="section" id="ict">
     <div class="row">
       <div class="large-12 columns">
       <h3><i class="foundicon-laptop"></i>ICT-sovellus</h3>
@@ -235,7 +241,7 @@
            <li><img src="images/people-na.jpg" />
               <h4>Tuire Salonurmi</h4>
               <p><abbr>FT</abbr></p>
-              <p>Projektipäällikkö, tutkija</p>
+              <p>Projektikoordinaattori, tutkija</p>
             </li>
             <li><img src="images/people-na.jpg" />
               <h4>Terhi Jokelainen</h4>
@@ -296,23 +302,50 @@
     </div>
     <div class="row">
       <div class="large-12 columns">
-        <h4>2013</h4>
-        <p><strong>Alahäivälä T., Oinas-Kukkonen H. & Jokelainen T.</strong> Software Architecture Design for Health BCSS: Case Onnikka. PERSUASIVE 2013, Lecture Notes In Computer Science, vol. 7822. Springer, Berlin <br /><a href="http://link.springer.com/content/pdf/10.1007%2F978-3-642-37157-8_3.pdf" target="_blank">http://link.springer.com/content/pdf/10.1007%2F978-3-642-37157-8_3.pdf</a>
-        <p><strong>Karppinen P. & Oinas-Kukkonen H.</strong> Three Approaches to Ethical Considerations in the Design of Behavior Change Support Systems. Lecture Notes in Computer Science, 2013, Volume 7822, Persuasive Technology, pp. 87-98. <br /><a href="http://link.springer.com/content/pdf/10.1007%2F978-3-642-37157-8_12.pdf" target="_blank">http://link.springer.com/content/pdf/10.1007%2F978-3-642-37157-8_12.pdf</a></p>
-        <p><strong>Oinas-Kukkonen Harri & Oinas-Kukkonen Henry</strong> Humanizing the Web: Change and Social Innovation. Palgrave Macmillan, Basingstoke, UK.<br /><a href="http://us.macmillan.com/humanizingtheweb/HarriOinasKukkonen" target="_blank">http://us.macmillan.com/humanizingtheweb/HarriOinasKukkonen</a></p></p>
-        </p>
+        <ul class='tabs sub-nav'>
+          <span>Näytä: </span>
+          <li><a href='#journals'>Tieteelliset artikkelit</a></li>
+          <li><a href='#tab2'>Kongressijulkaisut</a></li>
+          <li><a href='#dissertations'>Väitöskirjat ja opinnäytteet</a></li>
+          <li><a href='#books'>Muut julkaisut</a></li>
+         </ul>
+        <div id="journals">
+          <h4>2012</h4>
+           <p><strong>Oinas-Kukkonen, H.</strong> A foundation for the study of behavior change support systems. Personal and ubiquitous computing, Online First.<br /><a href="http://link.springer.com/content/pdf/10.1007%2Fs00779-012-0591-5.pdf" target="_blank">http://link.springer.com/content/pdf/10.1007%2Fs00779-012-0591-5.pdf</a></p>
+          <h4>2011</h4>
+          <p><strong>Keränen A-M, Strengell K, Savolainen M, Laitinen J.</strong> Effect of weight loss intervention on the association between eating behaviour measured by TFEQ-18 and dietary intake in adults. Appetite (2011); (56)156-162.</p>
+          <p><strong>Komulainen T., Keränen A-M, Rasinaho E, Hakko H, Savolainen M, Kujari M-L, Reponen A, Lindeman S.</strong> Quitting a weight loss program is associated with anhedonia: the Lifestyle Intervention Treatment Evaluation Study in Northern Finland. International Journal of Circumpolar Health 2011;70:72-78.</p>
+          <p><strong>Lehto T. & Oinas-Kukkonen H.</strong> Persuasive Features in Web-Based Alcohol and Smoking Interventions: A Systematic Review of the Literature. Journal of Medical Internet Research, 13(3), e46.<br /><a href="http://www.jmir.org/2011/3/e46/" target="_blank">http://www.jmir.org/2011/3/e46/</a></p>
+          <p><strong>Segerståhl K. & Oinas-Kukkonen H.</strong> Designing for personal exercise monitoring employing multiple modes of delivery: Implications from a qualitative study on heart rate monitoring. International Journal of Medical Informatics, Vol. 80, Issue 12, pp. e203-e213, December 2011.<br /><a href="http://www.ncbi.nlm.nih.gov/pubmed/21963231" target="_blank">http://www.ncbi.nlm.nih.gov/pubmed/21963231</a></p>
+          <h4>2010</h4>
+          <p><strong>Alahuhta M, Ukkola T, Korkiakangas E, Jokelainen T, Keränen A-M, Kyngäs H, Laitinen J.</strong> Elintapamuutosvaihe sekä painonhallinnan onnistumisen edellytykset ja riskitekijät tyypin 2 diabeteksen riskihenkilöillä. Tutkiva hoitotyö 2010; (2) 4-13.</p>
+          <p><strong>Keränen A-M, Rasinaho E, Hakko H, Savolainen M, Lindeman S.</strong> Eating behavior in obese and overweight persons with and without anhedonia. Appetite 2010; (55) 726-729.</p>
+          <p><strong>Laitinen J, Korkiakangas E, Alahuhta M, Keinänen-Kiukaanniemi S, Rajala U, Timonen O, Jokelainen T, Keränen A-M, Remes J, Ruokonen A, Hedberg P, Husman P, Olkkonen S.</strong> Feasibility of videoconferencing in lifestyle group counseling. International Journal of Circumpolar Health 2010; 69(5):500-511.</p>
+          <h4>2009</h4>
+            <p><strong>Keränen A-M, Savolainen M J, Reponen A H, Kujari M, Bloigu R, Lindeman S, Laitinen J.</strong> The effect of eating behavior on weight loss and maintenance during a lifestyle intervention. Preventive Medicine 2009; (49) 32-38.</p>
+          <p><strong>Oinas-Kukkonen H. & Harjumaa M.</strong> Persuasive Systems Design: Key Issues, Process Model, and System Features. Communications of the Association for Information Systems, Vol. 24, Article 28, pp. 485-500, March 2009.<br /><a href="http://aisel.aisnet.org/cais/vol24/iss1/28/" target="_blank">http://aisel.aisnet.org/cais/vol24/iss1/28/</a></p>
+        </div>
+        <div id='tab2'>
+          <h4>2013</h4>
+          <p><strong>Alahäivälä T., Oinas-Kukkonen H. & Jokelainen T.</strong> Software Architecture Design for Health <abbr>BCSS</abbr>: Case Onnikka. PERSUASIVE 2013, Lecture Notes In Computer Science, vol. 7822. Springer, Berlin <br /><a href="http://link.springer.com/content/pdf/10.1007%2F978-3-642-37157-8_3.pdf" target="_blank">http://link.springer.com/content/pdf/10.1007%2F978-3-642-37157-8_3.pdf</a>
+          <p><strong>Karppinen P. & Oinas-Kukkonen H.</strong> Three Approaches to Ethical Considerations in the Design of Behavior Change Support Systems. Lecture Notes in Computer Science, 2013, Volume 7822, Persuasive Technology, pp. 87-98. <br /><a href="http://link.springer.com/content/pdf/10.1007%2F978-3-642-37157-8_12.pdf" target="_blank">http://link.springer.com/content/pdf/10.1007%2F978-3-642-37157-8_12.pdf</a></p>
         <h4>2012</h4>
-        <p><strong>Langrial S., Lehto T., Oinas-Kukkonen H., Harjumaa M. & Karppinen P.</strong> Native Mobile Applications for Personal Well-Being: A Persuasive Systems Design Evaluation. In: 16th Pacific-Asia Conference on Information Systems, PACIS 2012 Proceedings. <br /><a href="http://aisel.aisnet.org/pacis2012/93/" target="_blank">http://aisel.aisnet.org/pacis2012/93/</a></p>
-        <p><strong>Lehto T., Oinas-Kukkonen H. & Drozd F.</strong> Factors Affecting Perceived Persuasiveness of a Behavior Change Support System. International Conference on Information Systems (ICIS 2012), Orlando, Florida, December 16-19. <br /><a href="http://aisel.aisnet.org/icis2012/proceedings/HumanBehavior/18/" target="_blank">http://aisel.aisnet.org/icis2012/proceedings/HumanBehavior/18/</a></p>
-        <p><strong>Lehto T., Oinas-Kukkonen H., Pätiälä T. & Saarelma 0.</strong> Consumers’ Perceptions of a Virtual Health Check: An Empirical Investigation. In: 20th European Conference on Information Systems, ECIS 2012 Proceedings, Paper 154. <br /><a href="http://aisel.aisnet.org/ecis2012/154" target="_blank">http://aisel.aisnet.org/ecis2012/154</a></p>
-        <p><strong>Oinas-Kukkonen, H.</strong> A foundation for the study of behavior change support systems. Personal and ubiquitous computing, Online First.<br /><a href="http://link.springer.com/content/pdf/10.1007%2Fs00779-012-0591-5.pdf" target="_blank">http://link.springer.com/content/pdf/10.1007%2Fs00779-012-0591-5.pdf</a></p>
-        <h4>2011</h4>
-        <p><strong>Keränen, A-M.</strong> Lifestyle interventions in treatment of obese adults. Eating behaviour and other factors affecting weight loss and maintenance. University of Oulu, Oulu, Finland</p>
-        <p><strong>Lehto T. & Oinas-Kukkonen H.</strong> Persuasive Features in Web-Based Alcohol and Smoking Interventions: A Systematic Review of the Literature. Journal of Medical Internet Research, 13(3), e46.<br /><a href="http://www.jmir.org/2011/3/e46/" target="_blank">http://www.jmir.org/2011/3/e46/</a></p>
-        <p><strong>Segerståhl K. & Oinas-Kukkonen H.</strong> Designing for personal exercise monitoring employing multiple modes of delivery: Implications from a qualitative study on heart rate monitoring. International Journal of Medical Informatics, Vol. 80, Issue 12, pp. e203-e213, December 2011.<br /><a href="http://www.ncbi.nlm.nih.gov/pubmed/21963231" target="_blank">http://www.ncbi.nlm.nih.gov/pubmed/21963231</a></p>
-        <h4>2009</h4>
-        <p><strong>Harjumaa M., Segerståhl K. & Oinas-Kukkonen H.</strong> Understanding Persuasive System Functionality in Practice: a Field Trial of Polar FT60. ACM International Conference Proceeding Series, Vol. 350, Proceedings of the Fourth International Conference on Persuasive Technology, Claremont, CA, USA, April 26-29, 2009.<br /><a href="http://dl.acm.org/citation.cfm?id=1541952" target="_blank">http://dl.acm.org/citation.cfm?id=1541952</a></p>
-        <p><strong>Oinas-Kukkonen H. & Harjumaa M.</strong> Persuasive Systems Design: Key Issues, Process Model, and System Features. Communications of the Association for Information Systems, Vol. 24, Article 28, pp. 485-500, March 2009.<br /><a href="http://aisel.aisnet.org/cais/vol24/iss1/28/" target="_blank">http://aisel.aisnet.org/cais/vol24/iss1/28/</a></p>
+          <p><strong>Langrial S., Lehto T., Oinas-Kukkonen H., Harjumaa M. & Karppinen P.</strong> Native Mobile Applications for Personal Well-Being: A Persuasive Systems Design Evaluation. In: 16th Pacific-Asia Conference on Information Systems, PACIS 2012 Proceedings. <br /><a href="http://aisel.aisnet.org/pacis2012/93/" target="_blank">http://aisel.aisnet.org/pacis2012/93/</a></p>
+          <p><strong>Lehto T., Oinas-Kukkonen H. & Drozd F.</strong> Factors Affecting Perceived Persuasiveness of a Behavior Change Support System. International Conference on Information Systems (ICIS 2012), Orlando, Florida, December 16-19. <br /><a href="http://aisel.aisnet.org/icis2012/proceedings/HumanBehavior/18/" target="_blank">http://aisel.aisnet.org/icis2012/proceedings/HumanBehavior/18/</a></p>
+          <p><strong>Lehto T., Oinas-Kukkonen H., Pätiälä T. & Saarelma 0.</strong> Consumers’ Perceptions of a Virtual Health Check: An Empirical Investigation. In: 20th European Conference on Information Systems, ECIS 2012 Proceedings, Paper 154. <br /><a href="http://aisel.aisnet.org/ecis2012/154" target="_blank">http://aisel.aisnet.org/ecis2012/154</a></p>
+          <h4>2009</h4>
+          <p><strong>Harjumaa M., Segerståhl K. & Oinas-Kukkonen H.</strong> Understanding Persuasive System Functionality in Practice: a Field Trial of Polar FT60. ACM International Conference Proceeding Series, Vol. 350, Proceedings of the Fourth International Conference on Persuasive Technology, Claremont, CA, USA, April 26-29, 2009.<br /><a href="http://dl.acm.org/citation.cfm?id=1541952" target="_blank">http://dl.acm.org/citation.cfm?id=1541952</a></p>
+        </div>
+        <div id='dissertations'>
+          <h4>2011</h4>
+          <p><strong>Keränen, A-M.</strong> Lifestyle interventions in treatment of obese adults. Eating behaviour and other factors affecting weight loss and maintenance. Väitöskirja, Oulun Yliopisto</p>
+        </div>
+        <div id='books'>
+          <h4>2013</h4>
+          <p><strong>Oinas-Kukkonen Harri & Oinas-Kukkonen Henry</strong> Humanizing the Web: Change and Social Innovation. Palgrave Macmillan, Basingstoke, UK.<br /><a href="http://us.macmillan.com/humanizingtheweb/HarriOinasKukkonen" target="_blank">http://us.macmillan.com/humanizingtheweb/HarriOinasKukkonen</a></p>
+          <h4>2012</h4>
+          <p><strong>Laitinen J, Alahuhta M, Keränen A-M, Korkiakangas E, Nevanperä N.</strong> Painonhallitsija. Työterveyslaitos</p>
+        </div>
       </div>
     </div>
   </div>  
