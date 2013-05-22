@@ -5862,10 +5862,10 @@ h3 {
 abbr {
   font-variant: small-caps;
   font-weight: 600;
-  letter-spacing: 0.1em;
   text-transform: lowercase;
   color: white;
   border-bottom: 0px;
+  cursor: auto;
 }
 
 /* line 113, ../sass/app.scss */
@@ -5983,6 +5983,23 @@ abbr {
   height: 30px;
 }
 
+/* line 69, ../sass/app.scss */
+#showcase p {
+  margin-bottom: 0;
+}
+/* line 73, ../sass/app.scss */
+#showcase p + p {
+  text-indent: 2em;
+  margin-top: 0;
+}
+/* line 77, ../sass/app.scss */
+#showcase h4:first-child {
+  margin-top: 0;
+}
+/* line 80, ../sass/app.scss */
+#showcase h4 {
+  margin-top: 0.764em;
+}
 /* line 223, ../sass/app.scss */
 #showcase h3 {
   color: #222;
@@ -6045,21 +6062,25 @@ abbr {
   text-align: center;
 }
 /* line 286, ../sass/app.scss */
+#researchers abbr {
+  letter-spacing: 0.1em;
+}
+/* line 290, ../sass/app.scss */
 #researchers h4 {
   margin-top: 0.8em;
   margin-bottom: 1em;
 }
-/* line 291, ../sass/app.scss */
+/* line 295, ../sass/app.scss */
 #researchers ul li h4 {
   font-size: 1em;
   margin-bottom: 0;
 }
-/* line 295, ../sass/app.scss */
+/* line 299, ../sass/app.scss */
 #researchers ul li p {
   font-size: 0.8em;
   margin-bottom: 0;
 }
-/* line 300, ../sass/app.scss */
+/* line 304, ../sass/app.scss */
 #researchers img {
   margin-top: 10px;
   height: 70px;
@@ -6068,25 +6089,41 @@ abbr {
   border-radius: 50em;
 }
 
-/* line 310, ../sass/app.scss */
+/* line 314, ../sass/app.scss */
 #publications {
   background: #0D2026;
   background: #0d2026 repeat;
+  min-height: 950px;
 }
-/* line 314, ../sass/app.scss */
+/* line 319, ../sass/app.scss */
+#publications blockquote p {
+  color: #a4dbea;
+}
+/* line 323, ../sass/app.scss */
+#publications h4 {
+  clear: both;
+}
+/* line 327, ../sass/app.scss */
+#publications img {
+  width: 171px;
+  float: left;
+  margin-right: 2em;
+  margin-bottom: 1em;
+}
+/* line 334, ../sass/app.scss */
 #publications p {
   color: white;
   font-size: 90%;
 }
-/* line 320, ../sass/app.scss */
+/* line 340, ../sass/app.scss */
 #publications .sub-nav a {
   color: #CCC;
 }
-/* line 324, ../sass/app.scss */
+/* line 344, ../sass/app.scss */
 #publications .active a {
   color: white;
 }
-/* line 327, ../sass/app.scss */
+/* line 347, ../sass/app.scss */
 #publications .tabs li, #publications span {
   display: inline;
   float: left;
@@ -6095,7 +6132,11 @@ abbr {
   margin-bottom: 0.625em;
   margin-left: 0.5625em;
 }
-/* line 336, ../sass/app.scss */
+/* line 355, ../sass/app.scss */
+#publications .tabs li a:hover, #publications span a:hover {
+  color: white;
+}
+/* line 360, ../sass/app.scss */
 #publications a.active {
   background: none repeat scroll 0 0 #2BA6CB;
   border-radius: 1000px 1000px 1000px 1000px;

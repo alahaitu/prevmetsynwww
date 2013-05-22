@@ -20,7 +20,9 @@ $('ul.tabs').each(function(){
   $(this).on('click', 'a', function(e){
     // Make the old tab inactive.
     $active.removeClass('active');
-    $content.hide();
+    $content.fadeOut('fast', function() {
+    // Animation complete.
+    });
 
     // Update the variables with the new link and content
     $active = $(this);
@@ -28,7 +30,9 @@ $('ul.tabs').each(function(){
 
     // Make the tab active.
     $active.addClass('active');
-    $content.show();
+    $content.fadeIn('slow', function() {
+      // Animation complete
+    });
 
     // Prevent the anchor's default click action
     e.preventDefault();

@@ -99,16 +99,16 @@ h3 {
   margin-bottom: 1em;
   font-size: 2em;
 }
- 
+
 abbr {
   font-variant: small-caps;
   font-weight: 600;
-  letter-spacing: 0.1em;
+  //letter-spacing: 0.1em;
   text-transform: lowercase;
   color: white;
   border-bottom: 0px;
+  cursor: auto;
 }
-
 
 .top-bar-section ul li > a {
   height: 45px;
@@ -218,7 +218,7 @@ abbr {
 }
 
 #showcase {
-  // @include text-indents;
+  @include text-indents;
 
   h3 {
     color: #222;
@@ -283,6 +283,10 @@ abbr {
     }
   }
 
+  abbr {
+    letter-spacing: 0.1em;
+  }
+
   h4 {
     margin-top: 0.8em;
     margin-bottom: 1em;
@@ -310,6 +314,22 @@ abbr {
 #publications {
   background: #0D2026;
   background: rgba(13, 32, 38, 1) repeat;
+  min-height: 950px;
+
+  blockquote p {
+    color: #a4dbea;
+  }
+
+  h4 {
+    clear:both;
+  }
+
+  img {
+    width: 171px;
+    float: left;
+    margin-right: 2em;
+    margin-bottom: 1em;
+  }
 
   p {
     color: white;
@@ -331,6 +351,10 @@ abbr {
     font-weight: normal;
     margin-bottom: 0.625em;
     margin-left: 0.5625em;
+
+    a:hover {
+      color: white;
+    }
   }
 
   a.active {
